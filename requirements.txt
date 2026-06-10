@@ -1,0 +1,11 @@
+mlflow==2.14.0
+scikit-learn
+xgboost
+optuna
+pandas
+numpy
+matplotlib
+shap
+fastapi==0.110.0
+uvicorn
+orjson

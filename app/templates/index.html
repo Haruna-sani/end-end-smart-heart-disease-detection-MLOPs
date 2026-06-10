@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Heart Disease Risk Predictor</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="header">
+            <h1>🫀 Heart Disease Risk Prediction System</h1>
+            <p>AI-powered clinical decision support system (MLOps Pipeline)</p>
+        </div>
+
+        <form action="/predict" method="post" class="form">
+
+            <div class="grid">
+
+                <input type="number" name="age" placeholder="Age" required>
+                <select name="sex">
+                    <option value="1">Male</option>
+                    <option value="0">Female</option>
+                </select>
+
+                <input type="number" name="cp" placeholder="Chest Pain Type" required>
+                <input type="number" name="trestbps" placeholder="Resting BP" required>
+
+                <input type="number" name="chol" placeholder="Cholesterol" required>
+                <input type="number" name="fbs" placeholder="Fasting Blood Sugar" required>
+
+                <input type="number" name="restecg" placeholder="Rest ECG" required>
+                <input type="number" name="thalach" placeholder="Max Heart Rate" required>
+
+                <input type="number" name="exang" placeholder="Exercise Angina" required>
+                <input type="number" name="oldpeak" placeholder="Oldpeak" step="0.1" required>
+
+                <input type="number" name="slope" placeholder="Slope" required>
+                <input type="number" name="ca" placeholder="Major Vessels" required>
+
+                <input type="number" name="thal" placeholder="Thalassemia" required>
+
+            </div>
+
+            <button type="submit">Predict Risk</button>
+
+        </form>
+
+        {% if prediction_text %}
+        <div class="result">
+            <h2>{{ prediction_text }}</h2>
+        </div>
+        {% endif %}
+
+    </div>
+
+</body>
+</html>

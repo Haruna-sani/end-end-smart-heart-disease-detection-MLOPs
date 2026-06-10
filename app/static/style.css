@@ -1,0 +1,97 @@
+/* =========================
+   GLOBAL STYLES
+========================= */
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(120deg, #0f172a, #1e293b);
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+
+/* =========================
+   MAIN CONTAINER
+========================= */
+
+.container {
+    width: 60%;
+    margin: auto;
+    padding: 40px;
+    text-align: center;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.header h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.header p {
+    color: #94a3b8;
+    margin-bottom: 30px;
+}
+
+/* =========================
+   FORM GRID
+========================= */
+
+.form {
+    background: #111827;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.4);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+/* =========================
+   INPUTS
+========================= */
+
+input, select {
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    background: #1f2937;
+    color: white;
+}
+
+/* =========================
+   BUTTON
+========================= */
+
+button {
+    margin-top: 20px;
+    padding: 12px 25px;
+    background: #22c55e;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    color: white;
+}
+
+button:hover {
+    background: #16a34a;
+}
+
+/* =========================
+   RESULT BOX
+========================= */
+
+.result {
+    margin-top: 20px;
+    padding: 20px;
+    background: #0f766e;
+    border-radius: 10px;
+}
